@@ -153,6 +153,16 @@ namespace XmlRpcPortable.Converter
 
                                 }
                             }
+                            else
+                            {
+                                var dicAttr = prop.GetCustomAttribute<XmlRpcDictionaryAttribute>();
+
+                                if (dicAttr != null)
+                                {
+                                    //var val = Dictionary.
+                                }
+
+                            }
                         }
 
                         return ret;

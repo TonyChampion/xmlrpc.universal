@@ -20,7 +20,7 @@ namespace XmlRpcPortable.Models
         }
         public string StringValue
         {
-            get { return Value.ToString(); }
+            get { return Value == null ? "" : Value.ToString(); }
         }
 
     }

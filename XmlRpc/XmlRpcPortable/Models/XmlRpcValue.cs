@@ -18,7 +18,7 @@ namespace XmlRpcPortable.Models
 
         public virtual void BuildXml(XmlWriter writer)
         {
-            writer.WriteString(Value.ToString());
+            writer.WriteString(Value == null ? "" : Value.ToString());
 
         }
     }
